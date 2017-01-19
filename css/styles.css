@@ -502,6 +502,16 @@ Features-stack
     left: 530px;
     bottom: 129px;
     z-index: 2; }
+  .features .mobile-chat-wrap {
+    width: 265px;
+    background: url("../img/mobile_chat.png") no-repeat center center;
+    z-index: 3;
+    position: absolute;
+    height: 470px;
+    left: 549px;
+    bottom: 204px;
+    background-size: 265px;
+  }
   .features .device-showcase {
     position: absolute;
     bottom: -365px;
@@ -525,10 +535,20 @@ Features-stack
     position: absolute;
     width: 916px;
     height: 540px;
-    background: url("../img/macbook-pro.png") no-repeat center center;
+    background: url("../img/macbook-pro.png") no-repeat center left;
     top: 114px;
     z-index: 4;
     left: 50%; }
+  .features-extra .webchat {
+    width: 620px;
+    height: 437px;
+    background: url("../img/mac-screen.png") no-repeat left top;
+    background-size: 750px;
+    background-size: auto 569px;
+    position: absolute;
+    left: 112px;
+    top: 35px;
+    z-index: 4; }
 
 /* ==========================================================================
 .hero-strip
