@@ -494,6 +494,15 @@ Features-stack
     height: 1002px;
     background: url("../img/ipad-device.png") no-repeat center center;
     z-index: 1; }
+  .features .webchat {
+    width: 549px;
+    height: 700px;
+    background: url("../img/webchat.png") no-repeat right top;
+    background-size: auto 560px;
+    position: absolute;
+    left: 112px;
+    top: 88px;
+    z-index: 1; }
   .features .iphone-wrap {
     width: 304px;
     height: 620px;
@@ -510,7 +519,7 @@ Features-stack
     height: 470px;
     left: 549px;
     bottom: 204px;
-    background-size: 265px;
+    background-size: 267px;
   }
   .features .device-showcase {
     position: absolute;
@@ -539,7 +548,7 @@ Features-stack
     top: 114px;
     z-index: 4;
     left: 50%; }
-  .features-extra .webchat {
+  .features-extra .agentlist {
     width: 620px;
     height: 437px;
     background: url("../img/mac-screen.png") no-repeat left top;
