@@ -779,7 +779,8 @@ To top
     height: 60px;
     width: 70px;
     position: absolute;
-    right: 0;
+    right: 150px;
+    top: 0px;
     text-align: center; }
     .to-top .to-top-wrap a {
       display: block;
