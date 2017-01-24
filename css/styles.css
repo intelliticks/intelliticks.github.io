@@ -772,13 +772,12 @@ Sign up form
 To top
 ========================================================================== */
 .to-top {
-  height: 60px;
   background-color: #495061; }
   .to-top .to-top-wrap {
     height: 60px;
     width: 70px;
     position: absolute;
-    right: 150px;
+    right: 0px;
     top: 0px;
     text-align: center; }
     .to-top .to-top-wrap a {
