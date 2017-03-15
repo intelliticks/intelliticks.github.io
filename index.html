@@ -372,6 +372,17 @@
 			ga('send', 'event', 'inpage_link', $(this).attr('href'), $(this).text());
 		});
 	});
+
+(function(I, ti, c, k, s) {
+    if(I[s]) return;
+    I[s] = {host:k};
+    var h = ti.head || ti.documentElement;
+    var e = ti.createElement(c);
+    e.async = true;
+    e.src = "//"+k+'/iticks.js';
+    h.insertBefore(e, h.firstChild);
+})(window, document, 'script', 'demo.intelliticks.com', 'iticks');
+
     </script>
 </body>
 </html>
