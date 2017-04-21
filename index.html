@@ -49,6 +49,13 @@
       
     });
 
+  FB.Event.subscribe('send_to_messenger', function(e) {
+    // callback for events triggered by the plugin
+      console.log("messenger_send_to event");
+      console.log(e);
+  
+  });
+
     };
 
     (function(d, s, id){
@@ -372,14 +379,14 @@
   color="blue"
   size="standard" >
 </div>
-<div class="fb-messenger-checkbox"  
+<!--div class="fb-messenger-checkbox"  
   origin=https://www.facebook.com/IntelliTicks-191655164670720/
   page_id=191655164670720
   messenger_app_id=1066195983507231
   user_ref="UNIQUE_REF_PARAM" 
   prechecked="true" 
   allow_login="true" 
-  size="large"></div>
+  size="large"></div-->
         </footer>
         <div class="to-top-wrap">
             <a href="#top" class="top"><i class="fa fa-angle-up"></i></a>
