@@ -134,7 +134,7 @@ Main Components
     display: none;
   }
   .cd-pricing-list > li.cd-popular {
-    box-shadow: inset 0 0 0 3px #e97d68;
+    box-shadow: inset 0 0 0 3px #e74c3c;
   }
   .cd-pricing-list > li.cd-popular::before {
     /* hide table separator for .cd-popular table */
@@ -153,9 +153,9 @@ Main Components
     background: linear-gradient(to top, #3aa0d1, #3ad2d1);
   }
   .cd-secondary-theme .cd-pricing-list > li.cd-popular {
-    background: #e97d68;
-    background: -webkit-linear-gradient( bottom , #e97d68, #e99b68);
-    background: linear-gradient(to top, #e97d68, #e99b68);
+    background: #e74c3c;
+    background: -webkit-linear-gradient( bottom , #e74c3c, #e99b68);
+    background: linear-gradient(to top, #e74c3c, #e99b68);
     box-shadow: none;
   }
   .cd-pricing-list:nth-of-type(1)::before {
@@ -202,7 +202,7 @@ Main Components
   text-transform: uppercase;
 }
 .cd-popular .cd-pricing-header {
-  background-color: #e97d68;
+  background-color: #e74c3c;
 }
 @media only screen and (min-width: 768px) {
   .cd-pricing-header {
@@ -214,7 +214,7 @@ Main Components
     background-color: transparent;
   }
   .cd-popular .cd-pricing-header {
-    color: #e97d68;
+    color: #e74c3c;
     background-color: transparent;
   }
   .cd-secondary-theme .cd-pricing-header {
@@ -255,7 +255,7 @@ Main Components
     color: rgba(23, 61, 80, 0.4);
   }
   .cd-popular .cd-currency, .cd-popular .cd-duration {
-    color: #e97d68;
+    color: #e74c3c;
   }
   .cd-secondary-theme .cd-currency, .cd-secondary-theme .cd-duration {
     color: #2e80a7;
@@ -420,7 +420,7 @@ Main Components
     background-color: #112e3c;
   }
   .cd-popular .cd-select {
-    background-color: #e97d68;
+    background-color: #e74c3c;
   }
   .no-touch .cd-popular .cd-select:hover {
     background-color: #ec907e;
