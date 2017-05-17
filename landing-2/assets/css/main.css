@@ -125,6 +125,9 @@ a:hover {
   position: relative;
   margin-bottom: 15px;
 }
+.service-item{
+  margin-bottom: 40px;
+}
 .portfolio-item img {
   width: 100%;
 }
@@ -261,4 +264,3 @@ a:hover {
 #copyright a {
   color: #333;
 }
-
