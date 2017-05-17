@@ -59,7 +59,7 @@ catch(e) {
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#home" style="padding:5px;"><img src="assets/img/customer-service.svg" alt="IntelliTicks logo" style="width:43px;"> IntelliTicks</a>
+          <a class="navbar-brand" style="padding:5px;"><img src="assets/img/customer-service.svg" alt="IntelliTicks logo" style="width:43px;"> IntelliTicks</a>
         </div>
 
         <div class="collapse navbar-collapse" id="navbar">
@@ -97,8 +97,8 @@ catch(e) {
 	   	<li style="font-size:17px; padding-bottom: 10px;">One platform for all messaging apps</li>
 		<li style="font-size:17px; padding-bottom: 10px;">Be where your customers want you to be</li>
 	</ul>
-	<a href="#" class="btn btn-primary btn-lg">Get Started</a>
-        <a href="#" class="btn btn-common btn-lg">Learn More</a>
+	<a href="#portfolio" class="btn btn-primary btn-lg">Get Started</a>
+        <a href="#services" class="btn btn-common btn-lg">Learn More</a>
         </div>
 
 </div>
@@ -230,7 +230,7 @@ catch(e) {
 
 
             <footer class="cd-pricing-footer">
-            <a class="cd-select" href="http://codyhouse.co/?p=429">SIGNUP NOW</a>
+            <a class="cd-select coming-feature">SIGNUP NOW</a>
           </footer>
           <div class="cd-price" style="display: none;">
               <span class="cd-currency">$</span>
@@ -261,7 +261,7 @@ catch(e) {
             </div>
           <div style="margin-top: 10px;">Best for small teams</div>
           <footer class="cd-pricing-footer">
-            <a class="cd-select" href="http://codyhouse.co/?p=429">GET 30 days free trial</a>
+            <a class="cd-select coming-feature">GET 30 days free trial</a>
           </footer></header> <!-- .cd-pricing-header -->
 
           <div class="cd-pricing-body">
@@ -282,7 +282,7 @@ catch(e) {
             <div style="margin-top: 10px;">Perfect for enterprises</div>
 
             <footer class="cd-pricing-footer">
-            <a class="cd-select" href="http://codyhouse.co/?p=429">CONTACT US</a>
+            <a class="cd-select" href="#contact">CONTACT US</a>
           </footer><div class="cd-price" style="display: none;">
               <span class="cd-currency">$</span>
               <span class="cd-value">499</span>
@@ -338,11 +338,11 @@ catch(e) {
     <div class="row">
     <h1 class="title">Contact us</h1>
 
-    <h2 class="subtitle">Lorem Ipsum is simply dummy text</h2>
+    <h2 class="subtitle">We will set up a demo as per your requirements.</h2>
 
 
-    <form role="form" class="contact-form" method="post">
-    <div class="col-md-6 wow fadeInLeft" data-wow-delay=".5s">
+    <form role="form" class="contact-form" method="post" action="https://formspree.io/contact@intelliticks.com" role="form" style="overflow:hidden;">
+    <div class="col-md-6 wow fadeInLeft" data-wow-delay=".5s" style="margin-left:25%;">
     <div class="form-group">
     <div class="controls">
     <input type="text" class="form-control" placeholder="Name" name="name">
@@ -351,11 +351,6 @@ catch(e) {
     <div class="form-group">
     <div class="controls">
     <input type="email" class="form-control email" placeholder="Email" name="email">
-    </div>
-    </div>
-    <div class="form-group">
-    <div class="controls">
-    <input type="text" class="form-control requiredField" placeholder="Subject" name="subject">
     </div>
     </div>
 
@@ -370,7 +365,7 @@ catch(e) {
     </div>
     </form>
 
-    <div class="col-md-6 wow fadeInRight">
+    <div class="col-md-6 wow fadeInRight" style="display:none;">
     <div class="social-links">
     <a class="social" href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
     <a class="social" href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
@@ -397,14 +392,19 @@ catch(e) {
 
     <div id="copyright">
     <div class="container">
-    <div class="col-md-10"><p>© Corporal 2014 All right reserved. Design & Developed by <a href="http://graygrids.com">GrayGrids</a></p></div>
+    <div class="col-md-10"><p>© IntelliTicks 2017 All right reserved.</p></div>
     <div class="col-md-2">
         <span class="to-top pull-right"><a href="#hero-area"><i class="fa fa-angle-up fa-2x"></i></a></span>
         </div>
     </div>
     </div>
 <!-- Copyright Section End-->
+<!-- popup -->
+<div style="width:500px;height:200px;">
+	This is demo feature
+</div>
 
+<!-- popup ends -->
         <!-- Bootstrap JS -->
         <script src="assets/js/bootstrap.min.js"></script>
 
@@ -412,9 +412,16 @@ catch(e) {
                     <!-- Smooth Scroll -->
         <script src="assets/js/smooth-scroll.js"></script>
         <script src="assets/js/lightbox.min.js"></script>
+        <script src="assets/js/jquery.simplemodal.1.4.4.min.js"></script>
 
+<script>
+	$(function() {
+		$(".coming-feature").click(function() {
+			
+		});
+	});
+</script>
         <!-- All JS plugin Triggers -->
-        <script src="assets/js/main.js"></script>
 
 
 
