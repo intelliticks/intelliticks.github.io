@@ -268,4 +268,4 @@ a:hover {
 
 #simplemodal-overlay {background-color:#000;}
 #simplemodal-container {background-color:#fff; border:8px solid #444; padding:12px;}
-
+.navbar-default .navbar-nav>li>a:focus{color:#fff;}
