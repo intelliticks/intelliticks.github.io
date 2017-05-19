@@ -401,6 +401,7 @@ Main Components
   text-indent: 100%;
   white-space: nowrap;
   color: transparent;
+  cursor:pointer;
 }
 @media only screen and (min-width: 768px) {
   .cd-select {
