@@ -18,7 +18,7 @@ a {
   transition: all 0.2s linear;
 }
 a:hover {
-  color: #e76c3c;
+  color: #fff;
   text-decoration:none;
 }
 .row {
