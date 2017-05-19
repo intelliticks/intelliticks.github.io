@@ -19,6 +19,7 @@ a {
 }
 a:hover {
   color: #e76c3c;
+  text-decoration:none;
 }
 .row {
   padding: 80px 0px;
@@ -261,4 +262,7 @@ a:hover {
 #copyright a {
   color: #333;
 }
+
+#simplemodal-overlay {background-color:#000;}
+#simplemodal-container {background-color:#fff; border:8px solid #444; padding:12px;}
 

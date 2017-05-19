@@ -400,10 +400,15 @@ catch(e) {
     </div>
 <!-- Copyright Section End-->
 <!-- popup -->
-<div id="show-features" style="width:500px;height:200px;">
-	This is demo feature
+<div id="show-features">
+	<div style="margin: 50px 0 20px;text-align: center;font-size: 20px;font-weight: bold;">Would you like to send us the request to create an account for you?</div>
+	<div style="display: flex;flex-direction: row;justify-content: space-around;line-height: 30px;text-align: center;">
+  		<div style="padding:0 15px;background: #e74c3c;cursor:pointer;border-radius: 3px;">
+			<a class="closePopup" href="#contact" style="color:#fff;text-decoration:none;">Yes! I am interested</a>
+		</div>
+		<div class="closePopup" style="padding:0 15px;background: #0c1f28;color:#fff;cursor:pointer;border-radius: 3px;">No! Thanks</div>
+	</div>
 </div>
-
 <!-- popup ends -->
         <!-- Bootstrap JS -->
         <script src="assets/js/bootstrap.min.js"></script>
@@ -417,7 +422,10 @@ catch(e) {
 <script>
 	$(function() {
 		$(".coming-feature").click(function() {
-			$("#show-features").modal();
+			$("#show-features").modal({minWidth:500, minHeight:265});
+		});
+		$(".closePopup").click(function() {
+			$.modal.close();
 		});
 	});
 </script>
