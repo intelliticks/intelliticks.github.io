@@ -13,8 +13,8 @@
 <script>
 try {
 	var landing = localStorage.getItem("landing");
-	if(landing == "landing-1") {
-		window.location = "/landing-1/";
+	if(landing && landing.substr(0, 8) == "landing-") {
+		window.location = "/"+landing+"/";
 	}
 }
 catch(e) {
@@ -46,7 +46,7 @@ catch(e) {
 	FB.Event.subscribe('messenger_checkbox', function(e) {
       console.log("messenger_checkbox event");
       console.log(e);
-      
+
       if (e.event == 'rendered') {
         console.log("Plugin was rendered");
       } else if (e.event == 'checkbox') {
@@ -57,14 +57,14 @@ catch(e) {
       } else if (e.event == 'hidden') {
         console.log("Plugin was hidden");
       }
-      
+
     });
 
   FB.Event.subscribe('send_to_messenger', function(e) {
     // callback for events triggered by the plugin
       console.log("messenger_send_to event");
       console.log(e);
-  
+
   });
 
     };
@@ -377,26 +377,26 @@ catch(e) {
                <li><a href="#intro">Features</a></li>
                <li><a href="#contact">Contact us</a></li>
             </ul>
-<div class="fb-send-to-messenger" 
-  messenger_app_id="169381453587715" 
+<div class="fb-send-to-messenger"
+  messenger_app_id="169381453587715"
   page_id="336554763074851"
   data-ref="PASS_THROUGH_PARAM"
-  color="blue" 
+  color="blue"
   size="standard">
 </div>
-<!--div class="fb-messengermessageus" 
-  messenger_app_id="169381453587715" 
+<!--div class="fb-messengermessageus"
+  messenger_app_id="169381453587715"
   page_id="336554763074851"
   color="blue"
   size="standard" >
 </div>
-<!- -div class="fb-messenger-checkbox"  
+<!- -div class="fb-messenger-checkbox"
   origin=https://www.facebook.com/IntelliTicks-191655164670720/
   page_id=191655164670720
   messenger_app_id=1066195983507231
-  user_ref="UNIQUE_REF_PARAM" 
-  prechecked="true" 
-  allow_login="true" 
+  user_ref="UNIQUE_REF_PARAM"
+  prechecked="true"
+  allow_login="true"
   size="large"></div-->
         </footer>
         <div class="to-top-wrap">
@@ -441,7 +441,7 @@ catch(e) {
     e.src='//www.google-analytics.com/analytics.js';
     r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
     ga('create','UA-90574403-1','auto');ga('send','pageview');
-	
+
 	$(function() {
 		$('a').click(function() {
 			//console.log($(this).attr('href'), $(this).text());

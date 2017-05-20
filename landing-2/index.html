@@ -27,7 +27,7 @@
         <link rel="stylesheet" type="text/css" href="assets/extras/lightbox.css">
 <script>
 try {
-	var landing = localStorage.getItem("landing") || "landing-1";
+	var landing = localStorage.getItem("landing") || "landing-2";
 	localStorage.setItem("landing", landing);
 }
 catch(e) {
@@ -427,14 +427,18 @@ catch(e) {
    			<input type="email" class="form-control email signup-email" placeholder="Email" name="email">
    		</div>
    	</div>
-
+    <div class="form-group">
+        <div class="controls">
+            <input type="password" class="form-control password signup-password" placeholder="Password" name="password">
+        </div>
+    </div>
    	<div class="form-group" style="margin-bottom:30px;">
    		<div class="controls">
    			<input class="form-control signup-phone" placeholder="Phone Number" name="phone">
    		</div>
    	</div>
    	<button type="submit" id="submit-signup" class="btn btn-md btn-primary" style="padding: 6px 20px;">Sign Up</button>
-   	<button type="submit" class="btn btn-md btn-danger closePopup" style="padding: 6px 20px;">Cancel</button>
+   	<button class="btn btn-md btn-danger closePopup" style="padding: 6px 20px;">Cancel</button>
 		<div id="success" style="color:#34495e;"></div>
    </div>
   </form>
@@ -463,14 +467,14 @@ $(function() {
 		$(".closePopup").click(function() {
 			$.modal.close();
 		});
-		var forms = ['signup', 'contact'];
+		var forms = ['contact'];
 	forms.forEach(function(form) {
 		$("."+form+"-form").submit(function() {
 			var data = {name:$("."+form+"-name").val(), email: $("."+form+"-email").val(), message:$("."+form+"-message").val(), subject:$("."+form+"-phone").val()};
 			if(!data.email) return false;
 			$.modal.close();
 			$.ajax({
-    			url: "https://formspree.io/contact@intelliticks.com", 
+    			url: "https://formspree.io/contact@intelliticks.com",
     			method: "POST",
     			data: data,
     			dataType: "json"
@@ -483,6 +487,28 @@ $(function() {
 			return false;
 		});
 	});
+    $(".signup-form").submit(function() {
+        var data = {
+            name:$(".signup-name").val(),
+            email: $(".signup-email").val(),
+            password: $(".signup-password").val(),
+            phone: $(".signup-phone").val(),
+        };
+        if(!data.email) return false;
+        $.modal.close();
+        $.ajax({
+            url: "https://admin.intelliticks.com/api/signup",
+            method: "POST",
+            data: data,
+            dataType: "json"
+        }).then(function() {
+        });
+            $("#show-thanks").modal({minWidth:500, minHeight:200, zIndex:1050});
+            $("."+form+"-name").val('');
+            $("."+form+"-email").val('');
+            $("."+form+"-message").val('');
+        return false;
+    });
 });
 </script>
         <!-- All JS plugin Triggers -->
