@@ -430,21 +430,21 @@ catch(e) {
    			<input type="email" class="form-control email signup-email" placeholder="Email" name="email">
    		</div>
    	</div>
-    <div class="form-group">
+    <!--div class="form-group">
         <div class="controls">
             <input type="password" class="form-control signup-password" placeholder="Password" name="password">
         </div>
-    </div>
+    </div>-->
    	<div class="form-group" style="margin-bottom:30px;">
    		<div class="controls">
    			<input class="form-control signup-phone" placeholder="Phone Number" name="phone">
    		</div>
    	</div>
-    <div class="form-group">
+    <!--div class="form-group">
         <div class="controls">
             <input type="text" class="form-control signup-company-name" placeholder="Company Name" name="cname">
         </div>
-    </div>
+    </div-->
    	<button type="submit" id="submit-signup" class="btn btn-md btn-primary" style="padding: 6px 20px;">Sign Up</button>
    	<button class="btn btn-md btn-danger closePopup" style="padding: 6px 20px;">Cancel</button>
 		<div id="success" style="color:#34495e;"></div>
@@ -476,7 +476,7 @@ catch(e) {
 <script>
 $(function() {
 		$(".coming-feature").click(function() {
-			$("#show-signup").modal({minWidth:500, minHeight:420, zIndex:1050});
+			$("#show-signup").modal({minWidth:500, minHeight:365, zIndex:1050});
 		});
 		$(".closePopup").click(function() {
 			$.modal.close();
