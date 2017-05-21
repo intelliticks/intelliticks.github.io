@@ -1,0 +1,496 @@
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>IntelliTicks - Live Chat Platform for Social Media</title>
+
+        <link rel="stylesheet"  type="text/css" href="assets/css/style.css"> <!-- Resource style -->
+
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+        <!-- Main Style -->
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+        <!-- Responsive Style -->
+        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+        <!--Icon Fonts-->
+        <link rel="stylesheet" media="screen" href="assets/fonts/font-awesome/font-awesome.min.css" />
+
+
+
+        <!-- Extras -->
+        <link rel="stylesheet" type="text/css" href="assets/extras/animate.css">
+        <link rel="stylesheet" type="text/css" href="assets/extras/lightbox.css">
+<script>
+try {
+	var landing = localStorage.getItem("landing") || "home";
+	localStorage.setItem("landing", landing);
+}
+catch(e) {
+
+}
+</script>
+
+        <!-- jQuery Load -->
+        <script src="assets/js/jquery-min.js"></script>
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!-- start Mixpanel --><script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+        0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+        for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+        mixpanel.init("a9bf09bc32ee5ff8290893b76c72f6e9");</script><!-- end Mixpanel -->
+      </head>
+
+    <body data-spy="scroll" data-offset="20" data-target="#navbar">
+    <!-- Nav Menu Section -->
+    <div class="logo-menu">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="50">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header col-md-3">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" style="padding:5px;"><img src="assets/img/customer-service.svg" alt="IntelliTicks logo" style="width:43px;"> IntelliTicks</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="nav navbar-nav col-md-9 pull-right">
+                            <li class="active"><a href="#hero-area"><i class="fa fa-home" style="margin-right:5px;"></i> Home</a></li>
+                            <li><a href="#services"><i class="fa fa-check-square-o"  style="margin-right:5px;"></i> Features</a></li>
+                            <li><a href="#clients"><i class="fa fa-link" style="margin-right:5px;"></i> Integrations</a></li>
+                            <li><a href="#portfolio"><i class="fa fa-money" style="margin-right:5px;" ></i> Pricing</a></li>
+                            <li><a href="#contact"><i class="fa fa-phone" style="margin-right:5px;"></i> Contact</a></li>
+                            </ul>
+        </div>
+      </div>
+    </nav>
+    </div>
+<!-- Nav Menu Section End -->
+
+<!-- Hero Area Section -->
+
+<section id="hero-area">
+<div class="container">
+    <div class="row">
+<div class="col-md-12">
+        <!-- <h1 class="title">IntelliTicks - The unified chat platform</h1> -->
+        <h2 class="subtitle" style="padding-bottom:10px">Live Chat Support on Social Media Made Easy</h2>
+
+        <img class="col-md-6 col-sm-6 col-xs-12 animated fadeInLeft" style="width:37%" src="assets/img/new_unified.png" alt="">
+
+        <div class="col-md-6 col-sm-6 col-xs-12 animated fadeInRight delay-0-5" style="margin-top: 64px">
+        <span style="font-size:25px">IntelliTicks - The Social Live Chat Platform</span>
+        <ul style="padding-top: 20px; padding-bottom: 50px; padding-left:40px; list-style:disc">
+		<li style="font-size:17px; padding-bottom: 10px;">Extend live chat support to popular messaging apps
+		</li>
+    <li style="font-size:17px; padding-bottom: 10px;">Be where your customers want you to be</li>
+	  <li style="font-size:17px; padding-bottom: 10px;">Capture website visitor’s lead in 2 clicks</li>
+	   	<li style="font-size:17px; padding-bottom: 10px;">One platform to manage business presence across all messaging apps</li>
+	</ul>
+	<a href="#portfolio" class="btn btn-primary btn-lg">Get Started</a>
+        <a href="#services" class="btn btn-common btn-lg">Learn More</a>
+        </div>
+
+</div>
+
+    </div>
+</div>
+</section>
+
+<!-- Hero Area Section End-->
+
+
+
+<!-- Service Section -->
+
+<section id="services">
+<div class="container text-center">
+<div class="row">
+<h1 class="title" style="font-family: sans-serif; font-size: 42px;">Unified Chat Platform for Businesses</h1>
+<h2 class="subtitle" style="font-family: sans-serif; font-size: 30px;">Never miss a customer query in any digital channel</h2>
+
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    <div class="service-item">
+    <img style="width:30%; padding-bottom:20px" src="assets/img/2.png" alt="">
+    <h3 style="font-size:25px; font-family: sans-serif;">Never Lose a Lead</h3>
+    <p>Increase your ROI on social media marketing by capturing leads from all platforms at a single place</p>
+    </div>
+    </div>
+
+
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    <div class="service-item">
+    <img style="width:30%; padding-bottom:20px" src="assets/img/1.png" alt="">
+    <h3 style="font-size:25px; font-family: sans-serif;">Be where your customers are</h3>
+    <p>Extend customer support on popular platforms: Messenger, WhatsApp, Twitter, Slack etc.</p>
+    </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    <div class="service-item">
+    <img style="width:30%; padding-bottom:20px" src="assets/img/3.png" alt="">
+    <h3 style="font-size:25px; font-family: sans-serif;">Direct customer engagement</h3>
+    <p>Reach out to your customers in a direct and personal manner on their favourite messaging platforms</p>
+    </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    <div class="service-item">
+    <img style="width:30%; padding-bottom:20px" src="assets/img/4.png" alt="">
+    <h3 style="font-size:25px; font-family: sans-serif;">Schedule messages</h3>
+    <p>Schedule direct and personalised messages to your customers based on time or their engagement metrics</p>
+    </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    <div class="service-item">
+    <img style="width:30%; padding-bottom:20px" src="assets/img/5.png" alt="">
+    <h3 style="font-size:25px; font-family: sans-serif;">Broadcast messages to thousands of users</h3>
+    <p>Broadcast messages to all of users or a targetted groups at once</p>
+    </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    <div class="service-item">
+    <img style="width:30%; padding-bottom:20px" src="assets/img/6.png" alt="">
+    <h3 style="font-size:25px; font-family: sans-serif;">What's working and what not</h3>
+    <p>Find how effective your customer support is in making your customers happy</p>
+    </div>
+    </div>
+</div>
+</div>
+ </section>
+<!-- Service Section End -->
+
+
+
+
+
+
+<!-- Client Section -->
+    <section id="clients" style="background-color: #f1f1f1">
+    <div class="container">
+    <div class="row">
+
+    <h1 class="title">Integrations</h1>
+    <h2 class="subtitle"></h2>
+
+    <div class="wow fadeInDown">
+      <div class="col-md-2 col-md-2 col-sm-2 col-xs-12">
+        <center>
+          <img src="assets/img/messenger.svg" style="width:72px; padding-bottom:15px" alt="client-1"><br>
+          <span>Facebook</span>
+        </center>
+      </div>
+
+      <div class="col-md-2 col-md-2 col-sm-2 col-xs-12">
+        <center>
+          <img src="assets/img/livechat.png" style="width:117px; padding-bottom:15px" alt="client-1"><br>
+          <span>Live Chat</span>
+        </center>
+      </div>
+
+      <div class="col-md-2 col-md-2 col-sm-2 col-xs-12">
+        <center>
+          <img src="assets/img/twitter.png" style="width:70px; padding-bottom:15px" alt="client-1"><br>
+          <span>Twitter</span>
+        </center>
+      </div>
+
+      <div class="col-md-2 col-md-2 col-sm-2 col-xs-12">
+        <center>
+          <img src="assets/img/slack.png" style="width:70px; padding-bottom:15px" alt="client-1"><br>
+          <span>Slack</span>
+        </center>
+      </div>
+
+      <div class="col-md-2 col-md-2 col-sm-2 col-xs-12">
+        <center>
+          <img src="assets/img/telegram.png" style="width:70px; padding-bottom:15px" alt="client-1"><br>
+          <span>Telegram</span><br>
+          <span style="font-size:10px"><i>Coming Soon..</i></span>
+        </center>
+      </div>
+
+      <div class="col-md-2 col-md-2 col-sm-2 col-xs-12">
+        <center>
+          <img src="assets/img/whatsapp.png" style="width:70px; padding-bottom:15px" alt="WhatsApp"><br>
+          <span>WhatsApp</span><br>
+          <span style="font-size:10px"><i>Coming Soon..</i></span>
+        </center>
+      </div>
+
+    </div>
+    </div>
+    </div>
+    </section>
+<!-- Client Section End -->
+
+<!-- Portfolio Section -->
+
+    <section id="portfolio" style="background-color: #173D50">
+    <div class="container">
+    <div class="row">
+    <h1 class="title" style="color:#fff">Pricing</h1>
+
+    <div class="cd-pricing-container">
+      <ul class="cd-pricing-list" style="list-style: none;display: flex;">
+        <li>
+          <div style="height: 100px;background: #173D50;"></div>
+         <header class="cd-pricing-header">
+            <h2>Free</h2>
+            <div style="margin-top: 10px;">Ideal for individual</div>
+
+
+            <footer class="cd-pricing-footer">
+            <a class="cd-select coming-feature">SIGNUP NOW</a>
+          </footer>
+          <div class="cd-price" style="display: none;">
+              <span class="cd-currency">$</span>
+              <span class="cd-value">FREE</span>
+              <span class="cd-duration">mo</span>
+            </div>
+          </header> <!-- .cd-pricing-header -->
+
+          <div class="cd-pricing-body">
+            <ul class="cd-pricing-features">
+              <li style="margin-right:35px"><b>5000</b> interactions</li>
+              <li style="margin-right:35px"><b>3</b> integrations</li>
+              <li style="margin-right:35px"><b>3 months</b> Data</li>
+              <li style="margin-right:35px"><b>Email</b> Support</li>
+            </ul>
+          </div> <!-- .cd-pricing-body -->
+
+           <!-- .cd-pricing-footer -->
+        </li>
+        <li class="cd-popular">
+          <header class="cd-pricing-header">
+            <h2>Popular</h2>
+
+            <div class="cd-price">
+              <span class="cd-currency">$</span>
+              <span class="cd-value">99</span>
+              <span class="cd-duration">mo</span>
+            </div>
+          <div style="margin-top: 10px;">Best for small teams</div>
+          <footer class="cd-pricing-footer" style="padding-bottom:0;">
+            <a class="cd-select coming-feature">GET 30 days free trial</a>
+				<div style="color: #000;">No Credit Card required!</div>
+          </footer></header> <!-- .cd-pricing-header -->
+
+          <div class="cd-pricing-body">
+            <ul class="cd-pricing-features">
+              <li style="margin-right:35px"><b>100,000</b> interactions</li>
+              <li style="margin-right:35px"><b>All</b> integrations</li>
+              <li style="margin-right:35px"><b>12 months</b> Data</li>
+              <li style="margin-right:35px"><b>24/7</b> Support</li>
+              <li style="margin-right:35px">Scheduling</li>
+              <li style="margin-right:35px">Broadcast Messages</li>
+              <li style="margin-right:35px">Analytics</li>
+            </ul>
+          </div> <!-- .cd-pricing-body -->
+
+           <!-- .cd-pricing-footer -->
+        </li>
+        <li>
+          <div style="height: 100px;background: #173D50;"></div>
+          <header class="cd-pricing-header">
+            <h2>Enterprise</h2>
+            <div style="margin-top: 10px;">Perfect for enterprises</div>
+
+            <footer class="cd-pricing-footer">
+            <a class="cd-select" href="#contact">CONTACT US FOR PRICING</a>
+          </footer><div class="cd-price" style="display: none;">
+              <span class="cd-currency">$</span>
+              <span class="cd-value">499</span>
+              <span class="cd-duration">mo</span>
+            </div>
+          </header> <!-- .cd-pricing-header -->
+
+          <div class="cd-pricing-body">
+            <ul class="cd-pricing-features" style="margin-bottom:20px">
+              <li style="margin-right:35px"><b>Unlimited</b> interactions</li>
+              <li style="margin-right:35px"><b>All</b> integrations</li>
+              <li style="margin-right:35px"><b>Unlimited</b> data</li>
+              <li style="margin-right:35px"><b>24/7</b> Support</li>
+              <li style="margin-right:35px">Scheduling</li>
+              <li style="margin-right:35px">Broadcast Messages</li>
+              <li style="margin-right:35px">Analytics</li>
+            </ul>
+          </div> <!-- .cd-pricing-body -->
+
+            <!-- .cd-pricing-footer -->
+        </li>
+      </ul>
+    </div> <!-- .cd-pricing-container -->
+    </div>
+    </div>
+    </section>
+<!-- Portfolio Section End -->
+
+
+<!-- Conatct Section -->
+    <section id="contact">
+    <div class="container text-center">
+    <div class="row">
+    <h1 class="title">Contact us</h1>
+
+    <!--h2 class="subtitle">We will set up a demo as per your requirements.</h2-->
+
+
+    <form role="form" class="contact-form" style="overflow:hidden;">
+    	<div class="col-md-6 wow fadeInLeft" data-wow-delay=".5s" style="margin-left:25%;">
+    		<div class="form-group">
+    			<div class="controls">
+    				<input type="text" class="form-control contact-name" placeholder="Name" name="name">
+    			</div>
+    		</div>
+    		<div class="form-group">
+    			<div class="controls">
+    				<input type="email" class="form-control email contact-email" placeholder="Email" name="email">
+    			</div>
+    		</div>
+
+    		<div class="form-group">
+    			<div class="controls">
+    				<textarea rows="7" class="form-control contact-message" placeholder="Message" name="message"></textarea>
+    			</div>
+    		</div>
+   		<button type="submit" id="submit-contact" class="btn btn-lg btn-common">Send</button><div id="success" style="color:#34495e;"></div>
+    	</div>
+    </form>
+
+    <div class="col-md-6 wow fadeInRight" style="display:none;">
+    <div class="social-links">
+    <a class="social" href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+    <a class="social" href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+    <a class="social" href="#" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a>
+    <a class="social" href="#" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+	</div>
+<div class="contact-info">
+    <p><i class="fa fa-map-marker"></i> Seattle, WA 00000, USA</p>
+     <p><i class="fa fa-envelope"></i> info@yourwebsite.com</p>
+</div>
+
+    <p>
+    A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit.<br>
+    </p>
+
+    </div>
+
+    </div>
+    </div>
+    </section>
+
+<!-- Conatct Section End-->
+
+
+    <div id="copyright">
+    <div class="container">
+    <div class="col-md-10"><p>© IntelliTicks 2017 All right reserved.</p></div>
+    <div class="col-md-2">
+        <span class="to-top pull-right"><a href="#hero-area"><i class="fa fa-angle-up fa-2x"></i></a></span>
+        </div>
+    </div>
+    </div>
+<!-- Copyright Section End-->
+<!-- popup -->
+<div id="show-features" style="display:none;">
+	<div style="margin: 50px 0 20px;text-align: center;font-size: 20px;font-weight: bold;">Would you like to send us the request to create an account for you?</div>
+	<div style="display: flex;flex-direction: row;justify-content: space-around;line-height: 30px;text-align: center;">
+  		<div style="padding:0 15px;background: #e74c3c;cursor:pointer;border-radius: 3px;">
+			<a class="closePopup" href="#contact" style="color:#fff;text-decoration:none;">Yes! I am interested</a>
+		</div>
+		<div class="closePopup" style="padding:0 15px;background: #0c1f28;color:#fff;cursor:pointer;border-radius: 3px;">No! Thanks</div>
+	</div>
+</div>
+<div id="show-signup" style="display:none;">
+ <form role="form" class="signup-form" style="overflow:hidden;">
+	<div style="margin: 20px 0;text-align: center;font-size: 20px;font-weight: bold;">Sign Up</div>
+   <div class="col-md-6 wow fadeInLeft" data-wow-delay=".5s" style="margin-left:25%;">
+   	<div class="form-group">
+   		<div class="controls">
+   			<input type="text" class="form-control signup-name" placeholder="Name" name="name">
+   		</div>
+   	</div>
+   	<div class="form-group">
+   		<div class="controls">
+   			<input type="email" class="form-control email signup-email" placeholder="Email" name="email">
+   		</div>
+   	</div>
+
+   	<div class="form-group" style="margin-bottom:30px;">
+   		<div class="controls">
+   			<input class="form-control signup-phone" placeholder="Phone Number" name="phone">
+   		</div>
+   	</div>
+   	<button type="submit" id="submit-signup" class="btn btn-md btn-primary" style="padding: 6px 20px;">Sign Up</button>
+   	<button type="submit" class="btn btn-md btn-danger closePopup" style="padding: 6px 20px;">Cancel</button>
+		<div id="success" style="color:#34495e;"></div>
+   </div>
+  </form>
+</div>
+<div id="show-thanks" style="display:none;">
+	<div style="margin: 30px 0 20px;text-align: center;font-size: 20px;font-weight: bold;">Thanks for signing up! We will get back to you shortly.</div>
+	<div style="display: flex;flex-direction: row;justify-content: space-around;line-height: 30px;text-align: center;">
+		<div class="closePopup" style="padding:0 15px;background: #0c1f28;color:#fff;cursor:pointer;border-radius: 3px;">OK</div>
+	</div>
+</div>
+<!-- popup ends -->
+        <!-- Bootstrap JS -->
+        <script src="assets/js/bootstrap.min.js"></script>
+
+            <!-- Smooth Scroll -->
+                    <!-- Smooth Scroll -->
+        <script src="assets/js/smooth-scroll.js"></script>
+        <script src="assets/js/lightbox.min.js"></script>
+        <script src="assets/js/jquery.simplemodal.1.4.4.min.js"></script>
+
+<script>
+$(function() {
+		$(".coming-feature").click(function() {
+			$("#show-signup").modal({minWidth:500, minHeight:365, zIndex:1050});
+		});
+		$(".closePopup").click(function() {
+			$.modal.close();
+		});
+		var forms = ['signup', 'contact'];
+	forms.forEach(function(form) {
+		$("."+form+"-form").submit(function() {
+			var data = {name:$("."+form+"-name").val(), email: $("."+form+"-email").val(), message:$("."+form+"-message").val(), subject:$("."+form+"-phone").val()};
+			if(!data.email) return false;
+			$.modal.close();
+			$.ajax({
+    			url: "https://formspree.io/contact@intelliticks.com",
+    			method: "POST",
+    			data: data,
+    			dataType: "json"
+			}).then(function() {
+			});
+				$("#show-thanks").modal({minWidth:500, minHeight:200, zIndex:1050});
+				$("."+form+"-name").val('');
+				$("."+form+"-email").val('');
+				$("."+form+"-message").val('');
+			return false;
+		});
+	});
+});
+</script>
+        <!-- All JS plugin Triggers -->
+
+
+
+    </body>
+    </html>

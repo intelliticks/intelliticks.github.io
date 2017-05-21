@@ -13,7 +13,7 @@
 <script>
 try {
 	var landing = localStorage.getItem("landing");
-	if(landing && landing.substr(0, 8) == "landing-") {
+	if(landing) {
 		window.location = "/"+landing+"/";
 	}
 }
