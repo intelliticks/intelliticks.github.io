@@ -515,7 +515,7 @@ $(function() {
         if(!data.email) return false;
         $.modal.close();
         $.ajax({
-            url: "https://admin.intelliticks.com/auth/signup",
+            url: "https://app.prod.intelliticks.com/auth/signup",
             method: "POST",
             data: JSON.stringify(data),
             dataType: "json",
