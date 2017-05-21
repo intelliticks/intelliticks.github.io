@@ -429,7 +429,7 @@ catch(e) {
    	</div>
     <div class="form-group">
         <div class="controls">
-            <input type="password" class="form-control password signup-password" placeholder="Password" name="password">
+            <input type="password" class="form-control signup-password" placeholder="Password" name="password">
         </div>
     </div>
    	<div class="form-group" style="margin-bottom:30px;">
@@ -437,13 +437,24 @@ catch(e) {
    			<input class="form-control signup-phone" placeholder="Phone Number" name="phone">
    		</div>
    	</div>
+    <div class="form-group">
+        <div class="controls">
+            <input type="text" class="form-control signup-company-name" placeholder="Company Name" name="cname">
+        </div>
+    </div>
    	<button type="submit" id="submit-signup" class="btn btn-md btn-primary" style="padding: 6px 20px;">Sign Up</button>
    	<button class="btn btn-md btn-danger closePopup" style="padding: 6px 20px;">Cancel</button>
 		<div id="success" style="color:#34495e;"></div>
    </div>
   </form>
 </div>
-<div id="show-thanks" style="display:none;">
+<div id="show-thanks-contact" style="display:none;">
+	<div style="margin: 30px 0 20px;text-align: center;font-size: 20px;font-weight: bold;">Thanks for contacting us! We will get back to you shortly.</div>
+	<div style="display: flex;flex-direction: row;justify-content: space-around;line-height: 30px;text-align: center;">
+		<div class="closePopup" style="padding:0 15px;background: #0c1f28;color:#fff;cursor:pointer;border-radius: 3px;">OK</div>
+	</div>
+</div>
+<div id="show-thanks-signup" style="display:none;">
 	<div style="margin: 30px 0 20px;text-align: center;font-size: 20px;font-weight: bold;">Thanks for signing up! We will get back to you shortly.</div>
 	<div style="display: flex;flex-direction: row;justify-content: space-around;line-height: 30px;text-align: center;">
 		<div class="closePopup" style="padding:0 15px;background: #0c1f28;color:#fff;cursor:pointer;border-radius: 3px;">OK</div>
@@ -462,15 +473,21 @@ catch(e) {
 <script>
 $(function() {
 		$(".coming-feature").click(function() {
-			$("#show-signup").modal({minWidth:500, minHeight:365, zIndex:1050});
+			$("#show-signup").modal({minWidth:500, minHeight:420, zIndex:1050});
 		});
 		$(".closePopup").click(function() {
 			$.modal.close();
 		});
 		var forms = ['contact'];
-	forms.forEach(function(form) {
+	//forms.forEach(function(form) {
+        var form = forms[0];
 		$("."+form+"-form").submit(function() {
-			var data = {name:$("."+form+"-name").val(), email: $("."+form+"-email").val(), message:$("."+form+"-message").val(), subject:$("."+form+"-phone").val()};
+			var data = {
+                name:$("."+form+"-name").val(),
+                email: $("."+form+"-email").val(),
+                message:$("."+form+"-message").val(),
+                subject:$("."+form+"-phone").val()
+            };
 			if(!data.email) return false;
 			$.modal.close();
 			$.ajax({
@@ -480,33 +497,37 @@ $(function() {
     			dataType: "json"
 			}).then(function() {
 			});
-				$("#show-thanks").modal({minWidth:500, minHeight:200, zIndex:1050});
-				$("."+form+"-name").val('');
-				$("."+form+"-email").val('');
-				$("."+form+"-message").val('');
+			$("#show-thanks-contact").modal({minWidth:500, minHeight:200, zIndex:1050});
+			$("."+form+"-name").val('');
+			$("."+form+"-email").val('');
+			$("."+form+"-message").val('');
 			return false;
 		});
-	});
+	//});
     $(".signup-form").submit(function() {
         var data = {
             name:$(".signup-name").val(),
             email: $(".signup-email").val(),
             password: $(".signup-password").val(),
             phone: $(".signup-phone").val(),
+            companyName: $(".signup-company-name").val(),
         };
         if(!data.email) return false;
         $.modal.close();
         $.ajax({
-            url: "https://admin.intelliticks.com/api/signup",
+            url: "http://admin.intelliticks.test:3000/auth/signup",
             method: "POST",
-            data: data,
-            dataType: "json"
+            data: JSON.stringify(data),
+            dataType: "json",
+            contentType: "application/json; charset=utf-8"
         }).then(function() {
         });
-            $("#show-thanks").modal({minWidth:500, minHeight:200, zIndex:1050});
-            $("."+form+"-name").val('');
-            $("."+form+"-email").val('');
-            $("."+form+"-message").val('');
+        $("#show-thanks-signup").modal({minWidth:500, minHeight:200, zIndex:1050});
+        $(".signup-name").val('');
+        $(".signup-email").val('');
+        $(".signup-password").val('');
+        $(".signup-phone").val('');
+        $(".signup-company-name").val('');
         return false;
     });
 });
