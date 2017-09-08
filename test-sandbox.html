@@ -11,11 +11,11 @@
     <script type='text/javascript'>
     (function(I, _, T, i, c, k, s) {
         if(I.iticks) return;
-        I.iticks = {host:c, settings:s, clientId:k};
+        I.iticks = {host:c, settings:s, clientId:k, cdn:_};
         var h = T.head || T.documentElement;
         var e = T.createElement(i);
         e.async = true;
-        e.src = "https://"+_+'/iticks.js';
+        e.src = "//"+(_||c)+'/iticks.js';
         h.insertBefore(e, h.firstChild);
     })(window, 'd361nn0tbycf2u.cloudfront.net', document, 'script', 'app.sandbox.intelliticks.com', 'Bxkcytdo6Z2HsHANa', {});
     </script>
