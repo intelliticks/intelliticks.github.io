@@ -2,25 +2,24 @@
 <html>
       <head>
           <base href="/">
-          <style id='themed-style'>
-             #iticks-quick-replies > .iticks-quickreply {background: #77B3D4;}
-             #iticks-container .iticks-top-bar{background: #77B3D4;border-bottom: 1px solid #77B3D4;}
-             #iticks-container form:valid .iticks-chat-send-button svg {fill: #77B3D4;}
-             .chat-circle{fill:#77B3D4;}
-          </style>
-          <script>
-          localStorage.removeItem('lastRead');
-          localStorage.removeItem('iticksId');
-          (function(I, T, i, c, k, s) {
-              if(I.iticks) return;
-              I.iticks = {host:c, settings:s, clientId:k};
-              var h = T.head || T.documentElement;
-              var e = T.createElement(i);
-              e.async = true;
-              e.src = "//"+c+'/iticks.js';
-              h.insertBefore(e, h.firstChild);
-          })(window, document, 'script', location.host, 'Bxkcytdo6Z2HsHANa', {});
-          </script>
+<style>
+      #iticks-quick-replies > .iticks-quickreply {background: #77B3D4;}
+      #iticks-container .iticks-top-bar{background: #77B3D4;border-bottom: 1px solid #77B3D4;}
+      #iticks-container form:valid .iticks-chat-send-button svg {fill: #77B3D4;}
+      .chat-circle{fill:#77B3D4;}
+    </style>
+    <script type='text/javascript'>
+    (function(I, _, T, i, c, k, s) {
+        if(I.iticks) return;
+        I.iticks = {host:c, settings:s, clientId:k};
+        var h = T.head || T.documentElement;
+        var e = T.createElement(i);
+        e.async = true;
+        e.src = "https://"+_+'/iticks.js';
+        h.insertBefore(e, h.firstChild);
+    })(window, 'd361nn0tbycf2u.cloudfront.net', document, 'script', 'app.sandbox.intelliticks.com', 'Bxkcytdo6Z2HsHANa', {});
+    </script>
+
       </head>
       <body>
         <div>Simulator Page...</div>
