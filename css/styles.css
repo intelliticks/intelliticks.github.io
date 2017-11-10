@@ -724,9 +724,10 @@ Sign up form
   .sign-up .signup-form .form-input-group textarea {
     margin-left: 51px;
     padding: 17px 0 0 17px;
-    width: calc(100% - 50px);
+    width: calc(100% - 51px);
     height: 100%;
     border-radius: 6px;
+    resize: none;
     border: none; }
   .sign-up .signup-form .form-input-group textarea::-webkit-input-placeholder {
     color: #BCC1C3; }
