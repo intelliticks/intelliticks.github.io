@@ -130,6 +130,10 @@ $(function() {
    	 method: "POST",
 	    data: {_replyto:$('#email-field').val(), name:$('#name-field').val()},
 	    dataType: "json"
+	}).then(function(a,b,c) {
+		console.log(a,b,c, "go to homepage");
+	}, function() {
+		console.log("failed form");
 	});
 		return false;
 	});
