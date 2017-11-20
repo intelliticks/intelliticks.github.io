@@ -128,7 +128,7 @@ $(function() {
 	$.ajax({
 	    url: "https://formspree.io/contact@intelliticks.com", 
    	 method: "POST",
-	    data: {email:$('#email-field').val(), name:$('#name-field')},
+	    data: {email:$('#email-field').val(), name:$('#name-field').val()},
 	    dataType: "json"
 	});
 		return false;
