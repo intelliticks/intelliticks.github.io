@@ -33,7 +33,7 @@
   <!-- Hero -->
   <div class="hero-section fa-Block fa-SwirlHeader fa-SwirlHeader--video">
     <div class="hero-section-container fa-Grid fa-Grid--withGutter">
-      <div class="fa-Cell r-all--6of12 r-maxL--12of12 fa-Get-HeroDescription--get3">
+      <div class="fa-Cell r-all--6of12 r-maxL--12of12 fa-Get-HeroDescription--get3" style="width:60%;">
         <div class="fa-get3-hero-title">
 <h1 style="
     font-style: italic;
@@ -48,15 +48,15 @@
 ">The Strategy to Lose Leads</h4>
         </div>
          <ul>
-           <li class="features-list-get3">With reducing attention span and increasing competition, your <b style="font-size: 16px;font-weight: 700;">prospects will not wait for your reply.</b></li>
+           <li class="features-list-get3" style="padding:20px 0;">With reducing attention span and increasing competition, your <b style="font-size: 16px;font-weight: 700;">prospects will not wait for your reply.</b></li>
            <li class="features-list-get3">You need to <b style="font-size: 16px;font-weight: 700;">identify the hot prospects</b> among website visitors, who are exploring your product and making decisions to purchase; and enable your best reps to <b style="font-size: 16px;font-weight: 700;">engage them in a personalized manner without delay.</b></li>
-           <li class="features-list-get3">Sign up for the demo to understand how IntelliTicks can help you do just that.</li>
+           <li class="features-list-get3" style="padding:20px 0;">Sign up for the demo to understand how IntelliTicks can help you do just that.</li>
          </ul><p></p>
           <span class="features-list-get3-quote">
             <p></p>
           </span>
       </div>
-      <div class="fa-Cell r-all--6of12 r-maxL--12of12 fa-Cell--center-content">
+      <div class="fa-Cell r-all--6of12 r-maxL--12of12 fa-Cell--center-content" style="width:40%;">
         <div class="fa-SideCard fa-SideCard--get3landing">
 <h4 class="fa-SideCard-title fa-SideCard-title--centered" style="
     border-bottom: none;
@@ -80,7 +80,7 @@
                   </span>
                 </header>
                 <div class="fa-Form-input">
-                  <input type="tel" placeholder="Lisa Johnson" name="phone-field">
+                  <input type="text" placeholder="Lisa Johnson" id="name-field">
                 </div>
               </div>
               <div class="fa-Form-field">
@@ -93,11 +93,11 @@
                   </span>
                 </header>
                 <div class="fa-Form-input">
-                  <input type="email" placeholder="you@company.com" name="email-field">
+                  <input type="email" placeholder="you@company.com" required id="email-field">
                 </div>
               </div>
               <div class="fa-Form-field button">
-                <button class="fa-Form-button fa-BlueBtn default" disabled="" type="submit">
+                <button class="fa-Form-button fa-BlueBtn default" type="submit">
                   <span class="default">Schedule a Demo</span>
                 </button>
               </div>
@@ -121,5 +121,19 @@ s.parentNode.insertBefore(b, s);})();
 <noscript>
 <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=150187&fmt=gif" />
 </noscript>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(function() {
+	$('form').submit(function() {
+	$.ajax({
+	    url: "https://formspree.io/contact@intelliticks.com", 
+   	 method: "POST",
+	    data: {email:$('#email-field').val(), name:$('#name-field')},
+	    dataType: "json"
+	});
+		return false;
+	});
+});
+</script>
 </body>
 </html>
