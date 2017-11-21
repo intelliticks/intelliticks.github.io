@@ -131,7 +131,7 @@ $(function() {
 	    data: {_replyto:$('#email-field').val(), name:$('#name-field').val()},
 	    dataType: "json"
 	}).then(function(a,b,c) {
-		if(a.success == "email sent") top.location.href = "/";
+		if(a.success == "email sent") top.location.href = "/thank-you.html";
 	}, function() {
 		console.log("failed form");
 	});
