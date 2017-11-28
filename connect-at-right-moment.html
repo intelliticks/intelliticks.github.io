@@ -78,7 +78,7 @@
                     Name <span class="info"></span>
                   </label>
                   
-                  <span class="fa-Form-inline-error" data-for="phone-field">
+                  <span class="fa-Form-inline-error" data-for="name-field">
                   </span>
                 </header>
                 <div class="fa-Form-input">
@@ -136,14 +136,14 @@ s.parentNode.insertBefore(b, s);})();
 <noscript>
 <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=150187&fmt=gif" />
 </noscript>
-<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
 $(function() {
 	$('form').submit(function() {
 	$.ajax({
 	    url: "https://formspree.io/contact@intelliticks.com", 
    	 method: "POST",
-	    data: {_replyto:$('#email-field').val(), name:$('#name-field').val()},
+	    data: {_replyto:$('#email-field').val(), name:$('#name-field').val(), message:$("#phone-field").val()},
 	    dataType: "json"
 	}).then(function(a,b,c) {
 		if(a.success == "email sent") top.location.href = "/thank-you.html";
@@ -153,6 +153,6 @@ $(function() {
 		return false;
 	});
 });
-</script-->
+</script>
 </body>
 </html>
