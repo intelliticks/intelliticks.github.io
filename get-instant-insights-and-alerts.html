@@ -143,7 +143,7 @@ $(function() {
 	$.ajax({
 	    url: "https://cbg903h2je.execute-api.ap-south-1.amazonaws.com/prod/contact-form-send-email", 
    	 method: "POST",
-	    data: {_replyto:$('#email-field').val(), name:$('#name-field').val(), message:$("#phone-field").val()},
+	    data: JSON.stringify({_replyto:$('#email-field').val(), name:$('#name-field').val(), message:$("#phone-field").val()}),
 	    dataType: "json"
 	}).then(function(a,b,c) {
 		if(a.success == "email sent") top.location.href = "/thank-you.html";
