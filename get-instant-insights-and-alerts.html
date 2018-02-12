@@ -71,7 +71,7 @@
     color: #999;
 ">It's completely FREE, No Obligations!</h4>
           <div class="fa-SideCard-container">
-            <form name="signup-form" class="fa-Form --landing" action="https://cbg903h2je.execute-api.ap-south-1.amazonaws.com/prod/contactFormEmail" method="POST">
+            <form name="signup-form" class="fa-Form --landing" action="https://cbg903h2je.execute-api.ap-south-1.amazonaws.com/prod/contact-form-send-email" method="POST">
               <div class="fa-Form-field">
                 <header>
                   <label class="fa-Form-label">
@@ -141,7 +141,7 @@ s.parentNode.insertBefore(b, s);})();
 $(function() {
 	$('form').submit(function() {
 	$.ajax({
-	    url: "https://cbg903h2je.execute-api.ap-south-1.amazonaws.com/prod/contactFormEmail", 
+	    url: "https://cbg903h2je.execute-api.ap-south-1.amazonaws.com/prod/contact-form-send-email", 
    	 method: "POST",
 	    data: {_replyto:$('#email-field').val(), name:$('#name-field').val(), message:$("#phone-field").val()},
 	    dataType: "json"
