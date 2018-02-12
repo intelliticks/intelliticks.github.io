@@ -356,13 +356,13 @@ if(val.length > 0) {
                 <div class="col-md-6 col-md-offset-3">
                     <h3>Contact us for the demo or queries</h3>
                     <p>Leave a message. We will get back to you as soon as possible.</p>
-                    <form class="signup-form" action="https://formspree.io/contact@intelliticks.com" method="POST" role="form">
+                    <form class="signup-form" action="https://e8lncmc937.execute-api.ap-south-1.amazonaws.com/prod/contact-form-send-email" method="POST" role="form">
                         <div class="form-input-group">
-                            <i class="fa fa-envelope"></i><input type="email" name="email" class="" placeholder="Enter your email" required>
+                            <i class="fa fa-envelope"></i><input type="email" name="email" id="email-field" placeholder="Enter your email" required>
                         </div>
                         <div class="form-input-group">
                             <!--i class="fa fa-comment"></i><input type="text" class="" placeholder="Enter your message" required-->
-                            <i class="fa fa-comment"></i><textarea name="message" placeholder="Phone number and message"></textarea>
+                            <i class="fa fa-comment"></i><textarea name="message" id="message-field" placeholder="Phone number and message"></textarea>
                         </div>
                         <button type="submit" class="btn-fill sign-up-btn">Send</button>
                     </form>
@@ -415,6 +415,24 @@ var b = document.createElement("script");
 b.type = "text/javascript";b.async = true;
 b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
 s.parentNode.insertBefore(b, s);})();
+</script>
+<script>
+$(function() {
+	$('form').submit(function() {
+	$.ajax({
+	    url: "https://e8lncmc937.execute-api.ap-south-1.amazonaws.com/prod/contact-form-send-email", 
+   	 method: "POST",
+	    data: JSON.stringify({email:$('#email-field').val(), message:$('#message-field').val()}),
+	    dataType: "json"
+	}).then(function(a,b,c) {
+		top.location.href = "/thank-you.html";
+	}, function() {
+		console.log("failed form");
+		top.location.href = "/thank-you.html";
+	});
+		return false;
+	});
+});
 </script>
 <noscript>
 <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=150187&fmt=gif" />
