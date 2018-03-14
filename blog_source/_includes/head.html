@@ -1,0 +1,24 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <style>
+		.listbuilder-popup-content{overflow:hidden !important;}
+		.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
+.site-header {background:#232731;border:0;}
+.site-title {color:#fff;}
+	</style>
+  {% if jekyll.environment == 'production' and site.google_analytics %}
+    {% include google-analytics.html %}
+  {% endif %}
+	<!--script src="//load.sumome.com/" data-sumo-site-id="81bf6128589dc3f3de334216f62eb2e0a6c246f0b329c1fd2b9580337307d8ca" async="async"></script-->
+<script type='text/javascript'>
+    (function(I, _, T, i, c, k, s) {if(I.iticks) return;I.iticks = {host:c, settings:s, clientId:k, cdn:_, queue:[]};var h = T.head || T.documentElement;var e = T.createElement(i);var l = I.location;e.async = true;e.src = (_||c)+'/client/inject.min.js';h.insertBefore(e, h.firstChild);I.iticks.call = function(a, b) {b = b || {};try {b._meta = {url:l.href+l.hash, time:Date.now()};}catch(e) {b = {_meta:{url:l.href+l.hash, time:Date.now()}};}I.iticks.queue.push([a, b]);};})(window, 'https://d25ok8ck9cwr91.cloudfront.net', document, 'script', 'https://app.intelliticks.com', 'pSZJr5kbAY7jEwEtf_c', {});
+    </script>
+</head>
