@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Connect with hot prospects in real time"
-date: 2018-03-13 13:39:00 +0530
+title: "Unveiling the Marketer's Chat Platform"
+date: 2018-03-14 13:39:00 +0530
 ---
 The wait is over. While you were asleep, we released our chat platform and many other features. Now you can interact with hot opportunities knocking on your website. With this new release, you can :-
 

@@ -3,8 +3,7 @@
   <div class="wrapper">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
-		<img src="/iticks-36x36.png" style="float: left;margin: 10px 10px 0 0;">
-    <a class="site-title" style="color:#fff;" href="{{ "/" }}">{{ site.title | escape }}</a>
+    <div class="logo"><a href="/"><img src="/img/sedna-logo.png" alt="IntelliTicks"></a></div>
   
     {% if page_paths %}
       <nav class="site-nav">
