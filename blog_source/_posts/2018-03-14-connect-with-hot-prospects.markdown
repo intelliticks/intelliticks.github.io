@@ -14,6 +14,8 @@ Now you can interact with your live prospects easily with our chat widget.
 
 ![Conversation Panel](https://s3.ap-south-1.amazonaws.com/media.intelliticks.com/release-emails/2018-03-13_phase2/interact.gif){: .center-image }
 
+
+The chat-widget comes with three visibility modes:
 * **Always**: the widget is always visible to your visitors
 * **Never**: the widget is never visible and only collects insights
 * **Agent-Initiated**: the widget is hidden and only shows up when your team starts a chat with a website visitor
