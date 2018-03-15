@@ -1,16 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2018-03-14T19:52:37+05:30</updated><id>/blog/</id><title type="html">IntelliTicks</title><subtitle></subtitle><entry><title type="html">Unveiling the Marketer’s Chat Platform</title><link href="/blog/2018/03/14/connect-with-hot-prospects.html" rel="alternate" type="text/html" title="Unveiling the Marketer's Chat Platform" /><published>2018-03-14T13:39:00+05:30</published><updated>2018-03-14T13:39:00+05:30</updated><id>/blog/2018/03/14/connect-with-hot-prospects</id><content type="html" xml:base="/blog/2018/03/14/connect-with-hot-prospects.html">&lt;p&gt;The wait is over. While you were asleep, we released our chat platform and many other features. Now you can interact with hot opportunities knocking on your website. With this new release, you can :-&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2018-03-15T13:10:33+05:30</updated><id>/blog/</id><title type="html">IntelliTicks</title><subtitle></subtitle><entry><title type="html">Unveiling the Marketer’s Chat Platform</title><link href="/blog/2018/03/14/connect-with-hot-prospects.html" rel="alternate" type="text/html" title="Unveiling the Marketer's Chat Platform" /><published>2018-03-14T13:39:00+05:30</published><updated>2018-03-14T13:39:00+05:30</updated><id>/blog/2018/03/14/connect-with-hot-prospects</id><content type="html" xml:base="/blog/2018/03/14/connect-with-hot-prospects.html">&lt;p&gt;The wait is finally over. After four months of consistent efforts, we have released our &lt;strong&gt;chat platform exclusively built ground up for a marketer&lt;/strong&gt;, along with a host of many other interesting features. We are strikingly different from other platforms because &lt;strong&gt;we do not treat conversations as tickets but as engagement opportunities&lt;/strong&gt;. Our platform makes sure that every visitor on your website is interacted with so that we can identify genuine prospects and get them connected to experts in your team without wasting any time. We filter out the noise from the website traffic so that you can focus only on the real prospects.&lt;/p&gt;
 
-&lt;h2 id=&quot;interact--engage-your-live-prospects&quot;&gt;Interact &amp;amp; Engage your live prospects&lt;/h2&gt;
+&lt;p&gt;Our marketer’s chat platform not only lets you interact with the prospects but also send &lt;strong&gt;real-time alerts with enriched insights about &lt;em&gt;HOT prospects&lt;/em&gt; live on your website&lt;/strong&gt; so that you could interact with them when they are actually spending time understanding your product and offerings, not later when they have lost the context.&lt;/p&gt;
+
+&lt;p&gt;With this new release, you can :-&lt;/p&gt;
+
+&lt;h2 id=&quot;interact--engage-with-your-live-prospects&quot;&gt;Interact &amp;amp; Engage with your live prospects&lt;/h2&gt;
 &lt;p&gt;Now you can interact with your live prospects easily with our chat widget.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://s3.ap-south-1.amazonaws.com/media.intelliticks.com/release-emails/2018-03-13_phase2/interact.gif&quot; alt=&quot;Conversation Panel&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The chat widget is hidden by default and only shows up when you wish to. You can change the default behavior from Settings.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Always&lt;/strong&gt;: the widget is always visible to your visitors&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Never&lt;/strong&gt;: the widget is never visible and only collects insights&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Agent-Initiated&lt;/strong&gt;: the widget is hidden and only shows up when your team starts a chat with a website visitor&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&quot;get-real-time-alerts-when-a-hot-prospect-is-live&quot;&gt;Get real-time alerts when a hot prospect is live&lt;/h2&gt;
 &lt;p&gt;Get instant alert whenever you have a hot prospect live on website and evaluating your offerings. Don’t miss the chance to say ‘Hi’ to your potential leads.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://s3.ap-south-1.amazonaws.com/media.intelliticks.com/release-emails/2018-03-13_phase2/browser3.gif&quot; alt=&quot;Notifications&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;get-lead-insights-in-the-blink-of-an-eye&quot;&gt;Get Lead Insights in the blink of an eye&lt;/h2&gt;
+&lt;p&gt;You don’t have to ask repeated and boring questions to your leads. Now, with IntelliTicks get instant insights on your visitor’s interests and use them to create meaningful and targetted conversations with them from your very first “Hi” to them.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.ap-south-1.amazonaws.com/media.intelliticks.com/release-emails/2018-03-13_phase2/interest.png&quot; alt=&quot;Lead Insights&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;initiate-chat-proactively-with-live-hot-prospects&quot;&gt;Initiate chat proactively with live hot prospects&lt;/h2&gt;
 &lt;p&gt;Enough with waiting for a lead form submission. Now proactively interact with live hot prospects and capture their attention when they are in context of your company.&lt;/p&gt;
@@ -22,17 +35,12 @@
 
 &lt;p&gt;&lt;img src=&quot;https://s3.ap-south-1.amazonaws.com/media.intelliticks.com/release-emails/2018-03-13_phase2/mobile_alerts.gif&quot; alt=&quot;Mobile Notifications&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;get-lead-insights-at-the-blink-of-an-eye&quot;&gt;Get Lead Insights at the blink of an eye&lt;/h2&gt;
-&lt;p&gt;You don’t have to ask repeated questions with your lead. Get interests and persona of a lead in real time.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://s3.ap-south-1.amazonaws.com/media.intelliticks.com/release-emails/2018-03-13_phase2/interest.png&quot; alt=&quot;Lead Insights&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
-
 &lt;h2 id=&quot;add-internal-notes-for-each-of-your-prospects&quot;&gt;Add internal notes for each of your prospects&lt;/h2&gt;
-&lt;p&gt;Now add notes against each prospect and keep a record for internal communicationa and information sharing.&lt;/p&gt;
+&lt;p&gt;Now add notes to each prospect and keep a record of internal communication and information sharing.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://s3.ap-south-1.amazonaws.com/media.intelliticks.com/release-emails/2018-03-13_phase2/internal-notes.gif&quot; alt=&quot;Internal Notes&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;get-better-insights-by-excluding-your-own-internal-traffic&quot;&gt;Get better insights by excluding your own internal traffic&lt;/h2&gt;
 &lt;p&gt;Want to exclude your own office traffic from the platform. Now, simply add IP addresses to exclude or mark individual users as excluded.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://s3.ap-south-1.amazonaws.com/media.intelliticks.com/release-emails/2018-03-13_phase2/excluded.gif&quot; alt=&quot;Exclude IPs&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">The wait is over. While you were asleep, we released our chat platform and many other features. Now you can interact with hot opportunities knocking on your website. With this new release, you can :-</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;https://s3.ap-south-1.amazonaws.com/media.intelliticks.com/release-emails/2018-03-13_phase2/excluded.gif&quot; alt=&quot;Exclude IPs&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">The wait is finally over. After four months of consistent efforts, we have released our chat platform exclusively built ground up for a marketer, along with a host of many other interesting features. We are strikingly different from other platforms because we do not treat conversations as tickets but as engagement opportunities. Our platform makes sure that every visitor on your website is interacted with so that we can identify genuine prospects and get them connected to experts in your team without wasting any time. We filter out the noise from the website traffic so that you can focus only on the real prospects.</summary></entry></feed>
