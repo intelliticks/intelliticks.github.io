@@ -1,3 +1,5 @@
+jekyll build --destination ../blog --watch
+
 # "Sedna" One Page Website Template
 
 "Sedna" is a one page website template made by [Peter Finlan](http://peterfinlan.com/) exclusively for Codrops.
