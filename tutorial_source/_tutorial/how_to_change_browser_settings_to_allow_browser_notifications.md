@@ -33,8 +33,13 @@ In Firefox, follow the following steps to enable browser notifications
 * Click on ![Green Lock Sign](https://s3.ap-south-1.amazonaws.com/media.intelliticks.com/tutorial/browser_notification_error/mozilla_block.png) on the left of the URL bar
 * A pop-up will open.
 * Under the **Permission** heading, you will see **Blocked** in front of **Receive Notifications**
+* Remove **Blocked** by clicking on **x** in front of it.
+* Reload the page.
 * Once done, you will see a message bar asking you to subscribe for notifications. 
-* Click on "Subscribe" and you are all set. 
+* Click on **"Subscribe"**.
+* You will see a browser pop-up asking for permissions to show notifications. 
+* Click on **"Allow Notifications"**
+
 
 Check the working example here:-
 ![Browser Notification Alert Bar](https://s3.ap-south-1.amazonaws.com/media.intelliticks.com/tutorial/browser_notification_error/firefox_enable.gif)
