@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="css/etline-font.css">
     <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -32,12 +32,6 @@
     r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
     ga('create','UA-90574403-1','auto');ga('send','pageview');
 
-   $(function() {
-      $('a').click(function() {
-         //console.log($(this).attr('href'), $(this).text());
-         ga('send', 'event', 'inpage_link', $(this).attr('href'), $(this).text());
-      });
-   });
     </script>
 <script type='text/javascript'>
     (function(I, _, T, i, c, k, s) {if(I.iticks) return;I.iticks = {host:c, settings:s, clientId:k, cdn:_, queue:[]};var h = T.head || T.documentElement;var e = T.createElement(i);var l = I.location;e.async = true;e.src = (_||c)+'/client/inject.min.js';h.insertBefore(e, h.firstChild);I.iticks.call = function(a, b) {b = b || {};try {b._meta = {url:l.href+l.hash, time:Date.now()};}catch(e) {b = {_meta:{url:l.href+l.hash, time:Date.now()}};}I.iticks.queue.push([a, b]);};})(window, 'https://d25ok8ck9cwr91.cloudfront.net', document, 'script', 'https://app.intelliticks.com', 'pSZJr5kbAY7jEwEtf_c', {});
@@ -372,6 +366,12 @@
     <script src="bower_components/classie/classie.js"></script>
     <script src="bower_components/jquery-waypoints/lib/jquery.waypoints.min.js"></script>
 <script type="text/javascript">
+   $(function() {
+      $('a').click(function() {
+         //console.log($(this).attr('href'), $(this).text());
+         ga('send', 'event', 'inpage_link', $(this).attr('href'), $(this).text());
+      });
+   });
 _linkedin_data_partner_id = "150187";
 </script><script type="text/javascript">
 (function(){var s = document.getElementsByTagName("script")[0];
