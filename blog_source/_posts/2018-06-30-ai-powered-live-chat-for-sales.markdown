@@ -9,7 +9,7 @@ Artificial intelligence is the new electricity. It is shaping the world in ways 
 On analyzing the website traffic to lead conversion trends, we were shocked to see that **average conversion ratio is dismal (less than 1% on average)**. So, we decide to build a platform that can replicate the 1-1 personalized conversations, that salespeople do, in the online world.   
 {: .text-justify}
 
-A lot of businesses have been trying to do this using LiveChats tools available in the market. But with the unpredictable volume of traffic, it is impossible to do 1-1 engagement with existing tools. Most businesses are forced to do Sales like Support. They are **online only from Mon-Sat 9 am to 9 pm - only _42%_ of time**. It's like 3/4th of the time saying to customers 
+A lot of businesses have been trying to do this using LiveChats tools available in the market. But with the unpredictable volume of traffic, it is impossible to do 1-1 engagement with existing tools. Most businesses are forced to do Sales like Support. They are **online only from Mon-Fri 9 am to 7 pm - only _30%_ of time**. It's like 2/3th of the time saying to customers 
 {: .text-justify}
 > "We are closed now, come tomorrow!!" 
 {: .quote}
